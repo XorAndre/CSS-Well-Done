@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/XorAndre/CSS-Well-Done/issues"
   },
-  "homepage": "https://github.com/XorAndre/CSS-Well-Done#readme"
+  "homepage": "https://github.com/XorAndre/CSS-Well-Done#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
