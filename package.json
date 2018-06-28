@@ -1,0 +1,26 @@
+{
+  "name": "css-well-done",
+  "version": "1.0.0",
+  "description": "Site para posts CSS Well Done",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XorAndre/CSS-Well-Done.git"
+  },
+  "keywords": [
+    "CSS",
+    "componentes",
+    "css",
+    "front-end",
+    "css"
+  ],
+  "author": "André Rodrigues (xor)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XorAndre/CSS-Well-Done/issues"
+  },
+  "homepage": "https://github.com/XorAndre/CSS-Well-Done#readme"
+}
