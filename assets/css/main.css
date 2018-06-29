@@ -7,3 +7,9 @@
 * a:hover {
   text-decoration: none;
 }
+* footer,
+* header,
+* main,
+* section {
+  display: flex;
+}
