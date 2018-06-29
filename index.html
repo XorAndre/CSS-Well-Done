@@ -97,12 +97,12 @@
                                                     Uma coisa que já havia citado no texto anterior a este é que muitas vezes sem querer repetimos propriedades. Este tipo de propriedades podemos considerar como global. Aplicando que digamos em nosso reset ou então fazer a união de vários componentes e criar uma única regra específica, veja abaixo exemplos da maneira certa e errada.                                                   
                                                </p><br>
                                                <h3>MANEIRA ERRADA:</h3>
-                                               <pre>
+                                               <pre class="syntax-html">
                                                    a{text-decoration: none;}
                                                    .lista a{text-decoration: none;}
                                                </pre>
                                                <h3>MANEIRA CERTA:</h3>
-                                               <pre>
+                                               <pre class="syntax-html">
                                                    * a, * a:hover{text-decoration: none;}
                                                </pre>
                                                <p>
@@ -124,5 +124,8 @@
                 </footer>
             </section><!--/contents-->
         </main><!--/main-->
+        <!--Scripts-->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
