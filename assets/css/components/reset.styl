@@ -7,8 +7,13 @@
     padding 0
     a, a:hover
         text-decoration none
-    .header_top .container_fluid, .contents, .navbar 
-        display flex           
+    body 
+        overflow hidden    
+    .header_top .container_fluid, .contents, .main, .navbar 
+        display flex
+    .header_top .container_fluid, .main
+        @media(min-width: desktop)
+            flex-direction row                
     audio, img, footer, video, iframe
         display inline-block
         width 100%     

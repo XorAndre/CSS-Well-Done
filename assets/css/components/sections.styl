@@ -1,15 +1,34 @@
 .main
+    background-color #eee
+    flex-direction row-reverse
     .contents 
+        flex-direction column
         width 100%
-    .banner
-        background #8360c3  /* fallback for old browsers */
-        background -webkit-linear-gradient(to right, #2ebf91, #8360c3)  /* Chrome 10-25, Safari 5.1-6 */
-        background linear-gradient(to right, #2ebf91, #8360c3) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        .top 
-            padding 4em 0
-            h1, h2 
-                color #fff 
-                font-family roboto 
-                text-transform uppercase
-        @media(min-width: desktop)
-            min-height 30em        
+        @media(min-width: desktop)            
+            width 80%
+            .o-css
+                background-color #fff
+                box-shadow fast-shadow
+                margin 1em auto
+                width 80%     
+        .banner
+            background #8360c3  /* fallback for old browsers */
+            background -webkit-linear-gradient(to right, #2ebf91, #8360c3)  /* Chrome 10-25, Safari 5.1-6 */
+            background linear-gradient(to right, #2ebf91, #8360c3) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            .container
+                padding 4em
+                h1, h2 
+                    color #fff 
+                    font-family roboto 
+                    text-align center
+                    text-transform uppercase
+                h1 
+                    font-size 4em    
+                h2
+                    font-size 1.8em     
+            @media(min-width: desktop)
+                min-height 20em            
+                .container
+                    padding 8em 0
+               
+                
