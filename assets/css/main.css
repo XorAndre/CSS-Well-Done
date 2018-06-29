@@ -10,9 +10,6 @@
 * a:hover {
   text-decoration: none;
 }
-* body {
-  overflow: hidden;
-}
 * .header_top .container_fluid,
 * .contents,
 * .main,
@@ -137,7 +134,6 @@
     width: 20%;
   }
   .navbar .links {
-    overflow-y: scroll;
     position: fixed;
   }
 }
