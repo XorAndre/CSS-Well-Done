@@ -1,8 +1,10 @@
 .navbar
     background-color #fff
-    box-shadow fast-shadow
+    box-shadow fast-shadow    
+    position relative
     width 100%
-    z-index 2
+    .content-nav
+        display none    
     .links
         a
           color #222 
@@ -14,7 +16,10 @@
     @media(min-width: desktop)
         min-height 100vh
         width 20%
+        .content-nav
+            display block
         .links             
             position fixed
+            top 7em
         
             

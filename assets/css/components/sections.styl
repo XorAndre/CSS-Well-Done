@@ -1,16 +1,17 @@
 .main
-    background-color #eee
-    flex-direction row-reverse
+    background-color #eee    
+    @media(min-width: desktop)
+        flex-direction row-reverse
     .contents 
         flex-direction column
         width 100%
+        .background-content
+            background-color #fff
+            box-shadow fast-shadow
+            margin 2em auto
+            width 90%
         @media(min-width: desktop)            
-            width 80%
-            .background-content
-                background-color #fff
-                box-shadow fast-shadow
-                margin 2em auto
-                width 90%     
+            width 80%                 
         .banner
             background #8360c3  /* fallback for old browsers */
             background -webkit-linear-gradient(to right, #2ebf91, #8360c3)  /* Chrome 10-25, Safari 5.1-6 */

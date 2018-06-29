@@ -22,32 +22,41 @@
     <body>
         <main class="main" role="main">
             <nav class="navbar" role="navigation">
-                <ul class="links">
-                    <a href="#sobre-css">SOBRE ESCREVER UM CSS</a>
-                    <a href="#pare-pense">PARE E PENSE!</a>
-                    <a href="#errada">UMA FOLHA POLUÍDA</a>
-                    <a href="#certa">UMA FOLHA SAUDÁVEL</a>
-                    <a href="">EXEMPLOS DE COMPONENTES</a>
-                    <a href="">STYLUS SAUDÁVEL</a>
-                </ul>
+                <div class="content-nav" id="responsive-menu">
+                <div class="custom">                    
+                        <div class="options">
+                            <button class="bt bt-clean" title="Botão para tema escuro">
+                                TEMA CLEAN
+                            </button>
+                            <button class="bt bt-dark" title="Botão para tema escuro">
+                                TEMA DARK
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="links">
+                        <a href="#top">HOME</a>
+                        <a href="#sobre-css">SOBRE ESCREVER UM CSS</a>
+                        <a href="#pare-pense">PARE E PENSE!</a>
+                        <a href="#errada">UMA FOLHA POLUÍDA</a>
+                        <a href="#certa">UMA FOLHA SAUDÁVEL</a>
+                        <a href="">EXEMPLOS DE COMPONENTES</a>
+                        <a href="">STYLUS SAUDÁVEL</a>
+                    </ul><!--/links-->
+                </div><!--/content-nav-->
             </nav><!--/navbar-->
             <section class="contents">
                 <header class="header_top">
                    <div class="container_fluid">
                     <div class="logo">
                         <h2>{ CWD }</h2>
-                    </div><!--/logo-->
-                    <button class="responsive" id="responsive">
-                        <i></i>
-                    </button><!--/responsive-->
-                    <ul class="links" role="navigation">
-                        <a href=""><i></i> HOME</a>
+                    </div><!--/logo-->                    
+                    <ul class="links" role="navigation">                        
                         <a href=""><i></i> SOBRE O SITE</a>
-                        <a href="" title="CONFIGURAÇÕES DE TEMA"><i></i></a>
+                        <a href=""><i></i> FIQUE POR DENTRO</a>                        
                     </ul><!--/Links-->
                    </div><!--/container_fluid-->
                 </header><!--/header-->
-                <section class="banner">
+                <section class="banner" id="top">
                     <article id="top">
                         <div class="container">
                             <div class="col-12">
