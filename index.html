@@ -16,15 +16,17 @@
         <meta name="author" content="André Rodrigues">
         <meta name="description" content="Veja como é simples escrever uma folha de estilo de forma que possa crescer saudável">
         <meta name="keywords" content="CSS-Well-Done, CSS, CSS bonito, CSS rápido, aprenda a escrever folhas de estilo">
+        <meta name="revised" content="1day" />
+        <link rel="canonical" href="index.html" />
     </head>
     <body>
         <main class="main" role="main">
             <nav class="navbar" role="navigation">
                 <ul class="links">
                     <a href="#sobre-css">SOBRE ESCREVER UM CSS</a>
-                    <a href="pare-pense">PARE E PENSE!</a>
-                    <a href="">UMA FOLHA POLUÍDA</a>
-                    <a href="">UMA FOLHA SAUDÁVEL</a>
+                    <a href="#pare-pense">PARE E PENSE!</a>
+                    <a href="#errada">UMA FOLHA POLUÍDA</a>
+                    <a href="#certa">UMA FOLHA SAUDÁVEL</a>
                     <a href="">EXEMPLOS DE COMPONENTES</a>
                     <a href="">STYLUS SAUDÁVEL</a>
                 </ul>
@@ -55,7 +57,7 @@
                         </div>
                     </article>
                 </section><!--/BANNER-->
-                <section class="o-css" id="sobre-css">
+                <section class="background-content" id="sobre-css">
                     <article>
                         <div class="container">
                             <div class="col-12">
@@ -79,7 +81,7 @@
                         </div>
                     </article>
                 </section><!--/o-site-->
-                <section class="pare-pense" id="pare-pense">
+                <section class="background-content" id="pare-pense">
                         <article>
                             <div class="container">
                                 <div class="col-12">
@@ -114,7 +116,94 @@
                                 </div>
                             </div>
                         </article>
-                    </section><!--/o-site-->
+                </section><!--/o-site-->
+                <section class="background-content" id="errada">
+                    <article>
+                        <div class="container">
+                            <div class="col-12">                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2>FOLHA DE CSS ESCRITA DE MANEIRA RUIM</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre class="syntax-html">
+                                            *{
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            * a{
+                                                color: #333;
+                                                text-decoration: none;
+                                            }
+                                            .botão-yellow{
+                                                background-color: yellow;
+                                                border: 1px solid yellow;
+                                                color: #333;
+                                                font-size: 12px;
+                                                font-family: arial;
+                                                text-decoration: none;
+                                            }
+                                            .bt-crimson{
+                                                background-color: crimson;
+                                                border: 1px solid crimson;
+                                                color: #333;
+                                                font-size: 12px;
+                                                font-family: arial;
+                                                text-decoration: none;
+                                            }
+                                            nav ul a{text-decoration: none;}
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section><!--/errada-->
+                <section class="background-content" id="certa">
+                    <article>
+                        <div class="container">
+                            <div class="col-12">                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2>FOLHA DE CSS ESCRITA DE MANEIRA CERTA</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text">
+                                            <p>
+                                                Um detalhe importante, as regras globais devem vir sempre em primeiro lugar. 
+                                            </p>
+                                        </div>
+                                        <pre class="syntax-html">
+                                            *{
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            * a, * a:hover{
+                                                color: #333;
+                                                text-decoration: none;
+                                            }/*Regra Global*/
+                                            .bt{
+                                                border-style: solid;
+                                                border-width: 1px;
+                                                color: #333;
+                                                font-family: arial;
+                                                font-size: 12px;
+                                            }/*Regra global*/
+                                            .botão-yellow{
+                                                background-color: yellow;
+                                                border-color: yellow;                                                
+                                            }
+                                            .bt-crimson{
+                                                background-color: crimson;
+                                                border-color: crimson;                                                
+                                            }                                            
+                                        </pre>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>                
                 <footer class="footer">
                     <div class="container">
                         <div class="col-12">

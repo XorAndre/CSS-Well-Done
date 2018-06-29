@@ -1,27 +1,27 @@
-//Code editor
-$(document).ready(function() {
-	$('pre').makeCode({style: 'code-style-dark', addons: [{ name: 'js', parser: javascriptCode }]});
+//Scrolling
+let $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
 });
+//Code editor
+$(document).ready(function(){$('pre').makeCode({style: 'code-style-dark', addons: [{ name: 'js', parser: javascriptCode }]});});
 let javascriptCode = function(text) {return text;};
-// All shit
 let csharpCode = function(text) {
 	let comment = false;
 	let lines = text.split('\n');
 	text = '';
-
 	for(let i = 0; i < lines.length; i++) {
 		let line = lines[i];
 		line = line.replace(/(public|private|protected|static|virtual|abstract|override|class|struct|new)\b/ig, '<span class="sharp-keywords">$1</span>')
 					.replace(/\b(if|else|switch|case|break|return|namespace|using|while|bool|int|float|double|true|false|void)\b/ig, '<span class="sharp-default-types">$1</span>')
-					.replace(/(\/\/(.*)$)/g, '<span class="comment">$1</span>');
-
-		if (!comment) // Multiline comments shit
-		{
+					.replace(/(\/\/(.*)$)/g, '<span class="comment">$1</span>');		 
+		if (!comment){
 			let result1 = line.match(/\/\*([\s\S]*?)\*\//ig);
 			if(result1 != null){
-				for(let r = 0; r < result1.length; r++){
-					line = line.replace(result1[r], '<span class="comment">$&</span>');
-				}
+				for(let r = 0; r < result1.length; r++){line = line.replace(result1[r], '<span class="comment">$&</span>');}
 			}else{
 				let result = line.match(/\/\*([\s\S]*?)[\s\S]*/i);
 				if(result != null){
@@ -37,7 +37,6 @@ let csharpCode = function(text) {
 				comment = false;
 			}else{line = '<span class="comment">' + line + '</span>';}
 		}
-
 		text += line;
 		if (i != lines.length - 1)
 			text += '\n';
@@ -65,9 +64,7 @@ let htmlCode = function(text) {	return text;};
 			let tagsToReplace = { '&': '&amp;', '<': '&lt;', '>': '&gt;' };
 			return tagsToReplace[tag] || tag;
 		}
-		function safe_tags_replace(str) {
-			return str.replace(/[&<>]/g, replaceTag);
-		}
+		function safe_tags_replace(str){return str.replace(/[&<>]/g, replaceTag);}
 		function getAddon(name)	{
 			let result = null;
 			options.addons.forEach(function(item, i, arr) {
@@ -76,7 +73,7 @@ let htmlCode = function(text) {	return text;};
 			});
 			return result;
 		}
-		$(this).each(function() {
+		$(this).each(function(){
 			$this = $(this);
 			let syntax = $this.prop('class').replace('syntax-', '');
 			let text = $this.html();
@@ -136,5 +133,4 @@ let htmlCode = function(text) {	return text;};
 			}
 		}
 	};
-
 }(jQuery));
