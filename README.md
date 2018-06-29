@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## CSS-Well-Done
 
-You can use the [editor on GitHub](https://github.com/XorAndre/CSS-Well-Done/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este repostório ensina como melhorar as folhas de estilos. Procurei simplificar bastante e explicar as partes mais importantes para criar uma folha de estilo saudável. Além do tradicional CSS voce também verá um pouco de Stylus components para ajudar em seus estudos com este pré processador ou até mesmo iniciar.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Alguns pontos sobre os componentes
 
-### Markdown
+1) A versão atual do Grid que usei no arquivo components CSS não grid layout e sim flexbox. Achei interessante por hora usar o flexbox, mas em breve estarei adotando o gridlayout no arquivo. <br>
+2) Não exagerei em componentes por hora só coloquei os básicos como mensagens, buttons, mídias responsivas, formuládios, grids, cards e menu. De acordo com o tempo vou incrementado mais.<br>   
+3) Caso não saiba incluir arquivos CSS no HTML, abaixo está o jeito correto. 
+```html
+<link href="diretorio/arquivo.extensao" rel="styleshee">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/XorAndre/CSS-Well-Done/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
