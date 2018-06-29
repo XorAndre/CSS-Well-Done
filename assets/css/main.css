@@ -10,6 +10,15 @@
 * a:hover {
   text-decoration: none;
 }
+* body::-webkit-scrollbar-track,
+* background-color #F4F4F4,
+* body::-webkit-scrollbar {
+  width: 6px;
+  background: #f4f4f4;
+}
+* body::-webkit-scrollbar-thumb {
+  background: #dad7d7;
+}
 * .header_top .container_fluid,
 * .contents,
 * .main,
@@ -39,19 +48,29 @@
   border-width: 0.02em;
   border-radius: 3px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-  color: #fff;
+  color: #fff !important;
   display: block;
+  font-size: 0.98em !important;
+  font-weight: bold;
   margin: 0.3em 1.6em;
-  padding: 0.8em 1em;
+  padding: 0.8em 1em !important;
 }
 .bt.bt-clean {
   background-color: #fff;
   border-color: #fff;
-  color: #333;
+  color: #333 !important;
 }
 .bt.bt-dark {
-  background-color: #333;
-  border-color: #333;
+  background-color: #323b44;
+  border-color: #323b44;
+}
+.bt.bt-pink {
+  background-color: #f76397;
+  border-color: #f76397;
+}
+.bt.bt-teal {
+  background-color: #20c997;
+  border-color: #20c997;
 }
 .card {
   padding: 1em;
@@ -86,11 +105,63 @@
     font-size: 1.3em;
   }
 }
+.card-component {
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  margin-top: 0.8em;
+  min-height: 18em;
+  min-width: 30%;
+  max-width: 40%;
+}
+.card-component .card-header,
+.card-component .card-body,
+.card-component .card-footer {
+  margin: 0.5em auto;
+  padding: 0.34em;
+  width: 96%;
+}
+.card-component .card-header h2,
+.card-component .card-body h2,
+.card-component .card-footer h2,
+.card-component .card-header h3,
+.card-component .card-body h3,
+.card-component .card-footer h3,
+.card-component .card-header p,
+.card-component .card-body p,
+.card-component .card-footer p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-component .card-header h2,
+.card-component .card-body h2,
+.card-component .card-footer h2 {
+  font-size: 1.9em;
+  font-weight: 800;
+}
+.card-component .card-header p,
+.card-component .card-body p,
+.card-component .card-footer p {
+  font-size: 1em;
+}
 .custom {
   padding: 1em 0;
   position: fixed;
   min-width: 30%;
   max-width: 30%;
+}
+.cor_escura {
+  background-color: #323b44;
+}
+.cor_escura .header_top .logo h2 {
+  color: #20c997;
+}
+.cor_escura .banner {
+  background: #20c997 !important;
+}
+.cor_escura .footer {
+  background: #fff;
+}
+.cor_escura .footer p {
+  color: #333 !important;
 }
 .code {
   display: block;
@@ -249,7 +320,7 @@
   }
 }
 .main {
-  background-color: #eee;
+  background-color: rgba(238,238,238,0.212);
 }
 @media (min-width: 48em) {
   .main {

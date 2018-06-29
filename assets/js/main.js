@@ -6,6 +6,10 @@ $('a').click(function() {
     }, 500);
     return false;
 });
+//add classes
+$("#bt-escuro").click(function(){
+    $(".contents").addClass("cor_escura");
+});
 //Code editor
 $(document).ready(function(){$('pre').makeCode({style: 'code-style-dark', addons: [{ name: 'js', parser: javascriptCode }]});});
 let javascriptCode = function(text) {return text;};
